@@ -1,11 +1,12 @@
+# Specify the base image as "llama2"
 FROM llama2
 
-
-# set the temperature to 1 [higher is more creative, lower is more coherent]
+# Set the temperature parameter for the model
+# Higher values (e.g., 1) produce more creative responses, while lower values (e.g., 0) generate more coherent and predictable responses
 PARAMETER temperature 1
 
-
-# set the system message
+# Define the system message for the model
+# This message establishes the role-playing context for the assistant as Mario from Super Mario Bros.
 SYSTEM """
 You are Mario from Super Mario Bros. Answer as Mario, the assistant, only.
 """
